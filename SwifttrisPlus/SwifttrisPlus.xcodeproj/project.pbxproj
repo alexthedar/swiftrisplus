@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		767BC3841D4ED63800C75F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3831D4ED63800C75F5B /* AppDelegate.swift */; };
+		767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3871D4ED63800C75F5B /* GameScene.swift */; };
+		767BC38A1D4ED63800C75F5B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3891D4ED63800C75F5B /* GameViewController.swift */; };
+		767BC38D1D4ED63800C75F5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767BC38B1D4ED63800C75F5B /* Main.storyboard */; };
+		767BC38F1D4ED63900C75F5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767BC38E1D4ED63900C75F5B /* Assets.xcassets */; };
+		767BC3921D4ED63900C75F5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3901D4ED63900C75F5B /* LaunchScreen.storyboard */; };
+		767BC39D1D4ED63900C75F5B /* SwifttrisPlusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC39C1D4ED63900C75F5B /* SwifttrisPlusTests.swift */; };
+		767BC3A81D4ED63900C75F5B /* SwifttrisPlusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3A71D4ED63900C75F5B /* SwifttrisPlusUITests.swift */; };
+		767BC3BB1D4ED85000C75F5B /* bomb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3B61D4ED85000C75F5B /* bomb.mp3 */; };
+		767BC3BC1D4ED85000C75F5B /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3B71D4ED85000C75F5B /* drop.mp3 */; };
+		767BC3BD1D4ED85000C75F5B /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3B81D4ED85000C75F5B /* gameover.mp3 */; };
+		767BC3BE1D4ED85000C75F5B /* levelup.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3B91D4ED85000C75F5B /* levelup.mp3 */; };
+		767BC3BF1D4ED85000C75F5B /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3BA1D4ED85000C75F5B /* theme.mp3 */; };
+		767BC3CC1D4ED88000C75F5B /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3CB1D4ED88000C75F5B /* Sprites.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		767BC3991D4ED63900C75F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767BC3781D4ED63800C75F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767BC37F1D4ED63800C75F5B;
+			remoteInfo = SwifttrisPlus;
+		};
+		767BC3A41D4ED63900C75F5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 767BC3781D4ED63800C75F5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 767BC37F1D4ED63800C75F5B;
+			remoteInfo = SwifttrisPlus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		767BC3801D4ED63800C75F5B /* SwifttrisPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifttrisPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		767BC3831D4ED63800C75F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		767BC3871D4ED63800C75F5B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		767BC3891D4ED63800C75F5B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		767BC38C1D4ED63800C75F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		767BC38E1D4ED63900C75F5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		767BC3911D4ED63900C75F5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		767BC3931D4ED63900C75F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767BC3981D4ED63900C75F5B /* SwifttrisPlusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifttrisPlusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767BC39C1D4ED63900C75F5B /* SwifttrisPlusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifttrisPlusTests.swift; sourceTree = "<group>"; };
+		767BC39E1D4ED63900C75F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767BC3A31D4ED63900C75F5B /* SwifttrisPlusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwifttrisPlusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		767BC3A71D4ED63900C75F5B /* SwifttrisPlusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwifttrisPlusUITests.swift; sourceTree = "<group>"; };
+		767BC3A91D4ED63900C75F5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767BC3B61D4ED85000C75F5B /* bomb.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bomb.mp3; sourceTree = "<group>"; };
+		767BC3B71D4ED85000C75F5B /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drop.mp3; sourceTree = "<group>"; };
+		767BC3B81D4ED85000C75F5B /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameover.mp3; sourceTree = "<group>"; };
+		767BC3B91D4ED85000C75F5B /* levelup.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = levelup.mp3; sourceTree = "<group>"; };
+		767BC3BA1D4ED85000C75F5B /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
+		767BC3CB1D4ED88000C75F5B /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		767BC37D1D4ED63800C75F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767BC3951D4ED63900C75F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767BC3A01D4ED63900C75F5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		767BC3771D4ED63800C75F5B = {
+			isa = PBXGroup;
+			children = (
+				767BC3821D4ED63800C75F5B /* SwifttrisPlus */,
+				767BC39B1D4ED63900C75F5B /* SwifttrisPlusTests */,
+				767BC3A61D4ED63900C75F5B /* SwifttrisPlusUITests */,
+				767BC3811D4ED63800C75F5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		767BC3811D4ED63800C75F5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				767BC3801D4ED63800C75F5B /* SwifttrisPlus.app */,
+				767BC3981D4ED63900C75F5B /* SwifttrisPlusTests.xctest */,
+				767BC3A31D4ED63900C75F5B /* SwifttrisPlusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		767BC3821D4ED63800C75F5B /* SwifttrisPlus */ = {
+			isa = PBXGroup;
+			children = (
+				767BC3831D4ED63800C75F5B /* AppDelegate.swift */,
+				767BC3871D4ED63800C75F5B /* GameScene.swift */,
+				767BC3891D4ED63800C75F5B /* GameViewController.swift */,
+				767BC38B1D4ED63800C75F5B /* Main.storyboard */,
+				767BC38E1D4ED63900C75F5B /* Assets.xcassets */,
+				767BC3CB1D4ED88000C75F5B /* Sprites.atlas */,
+				767BC3B51D4ED85000C75F5B /* Sounds */,
+				767BC3901D4ED63900C75F5B /* LaunchScreen.storyboard */,
+				767BC3931D4ED63900C75F5B /* Info.plist */,
+			);
+			path = SwifttrisPlus;
+			sourceTree = "<group>";
+		};
+		767BC39B1D4ED63900C75F5B /* SwifttrisPlusTests */ = {
+			isa = PBXGroup;
+			children = (
+				767BC39C1D4ED63900C75F5B /* SwifttrisPlusTests.swift */,
+				767BC39E1D4ED63900C75F5B /* Info.plist */,
+			);
+			path = SwifttrisPlusTests;
+			sourceTree = "<group>";
+		};
+		767BC3A61D4ED63900C75F5B /* SwifttrisPlusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				767BC3A71D4ED63900C75F5B /* SwifttrisPlusUITests.swift */,
+				767BC3A91D4ED63900C75F5B /* Info.plist */,
+			);
+			path = SwifttrisPlusUITests;
+			sourceTree = "<group>";
+		};
+		767BC3B51D4ED85000C75F5B /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				767BC3B61D4ED85000C75F5B /* bomb.mp3 */,
+				767BC3B71D4ED85000C75F5B /* drop.mp3 */,
+				767BC3B81D4ED85000C75F5B /* gameover.mp3 */,
+				767BC3B91D4ED85000C75F5B /* levelup.mp3 */,
+				767BC3BA1D4ED85000C75F5B /* theme.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		767BC37F1D4ED63800C75F5B /* SwifttrisPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767BC3AC1D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlus" */;
+			buildPhases = (
+				767BC37C1D4ED63800C75F5B /* Sources */,
+				767BC37D1D4ED63800C75F5B /* Frameworks */,
+				767BC37E1D4ED63800C75F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwifttrisPlus;
+			productName = SwifttrisPlus;
+			productReference = 767BC3801D4ED63800C75F5B /* SwifttrisPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		767BC3971D4ED63900C75F5B /* SwifttrisPlusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767BC3AF1D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlusTests" */;
+			buildPhases = (
+				767BC3941D4ED63900C75F5B /* Sources */,
+				767BC3951D4ED63900C75F5B /* Frameworks */,
+				767BC3961D4ED63900C75F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767BC39A1D4ED63900C75F5B /* PBXTargetDependency */,
+			);
+			name = SwifttrisPlusTests;
+			productName = SwifttrisPlusTests;
+			productReference = 767BC3981D4ED63900C75F5B /* SwifttrisPlusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		767BC3A21D4ED63900C75F5B /* SwifttrisPlusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 767BC3B21D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlusUITests" */;
+			buildPhases = (
+				767BC39F1D4ED63900C75F5B /* Sources */,
+				767BC3A01D4ED63900C75F5B /* Frameworks */,
+				767BC3A11D4ED63900C75F5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				767BC3A51D4ED63900C75F5B /* PBXTargetDependency */,
+			);
+			name = SwifttrisPlusUITests;
+			productName = SwifttrisPlusUITests;
+			productReference = 767BC3A31D4ED63900C75F5B /* SwifttrisPlusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		767BC3781D4ED63800C75F5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Alexandar;
+				TargetAttributes = {
+					767BC37F1D4ED63800C75F5B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = Q835CPXYNT;
+					};
+					767BC3971D4ED63900C75F5B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 767BC37F1D4ED63800C75F5B;
+					};
+					767BC3A21D4ED63900C75F5B = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 767BC37F1D4ED63800C75F5B;
+					};
+				};
+			};
+			buildConfigurationList = 767BC37B1D4ED63800C75F5B /* Build configuration list for PBXProject "SwifttrisPlus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 767BC3771D4ED63800C75F5B;
+			productRefGroup = 767BC3811D4ED63800C75F5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				767BC37F1D4ED63800C75F5B /* SwifttrisPlus */,
+				767BC3971D4ED63900C75F5B /* SwifttrisPlusTests */,
+				767BC3A21D4ED63900C75F5B /* SwifttrisPlusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		767BC37E1D4ED63800C75F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767BC3921D4ED63900C75F5B /* LaunchScreen.storyboard in Resources */,
+				767BC3BC1D4ED85000C75F5B /* drop.mp3 in Resources */,
+				767BC3BF1D4ED85000C75F5B /* theme.mp3 in Resources */,
+				767BC3BD1D4ED85000C75F5B /* gameover.mp3 in Resources */,
+				767BC38F1D4ED63900C75F5B /* Assets.xcassets in Resources */,
+				767BC3BE1D4ED85000C75F5B /* levelup.mp3 in Resources */,
+				767BC3CC1D4ED88000C75F5B /* Sprites.atlas in Resources */,
+				767BC3BB1D4ED85000C75F5B /* bomb.mp3 in Resources */,
+				767BC38D1D4ED63800C75F5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767BC3961D4ED63900C75F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767BC3A11D4ED63900C75F5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		767BC37C1D4ED63800C75F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */,
+				767BC38A1D4ED63800C75F5B /* GameViewController.swift in Sources */,
+				767BC3841D4ED63800C75F5B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767BC3941D4ED63900C75F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767BC39D1D4ED63900C75F5B /* SwifttrisPlusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		767BC39F1D4ED63900C75F5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				767BC3A81D4ED63900C75F5B /* SwifttrisPlusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		767BC39A1D4ED63900C75F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767BC37F1D4ED63800C75F5B /* SwifttrisPlus */;
+			targetProxy = 767BC3991D4ED63900C75F5B /* PBXContainerItemProxy */;
+		};
+		767BC3A51D4ED63900C75F5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 767BC37F1D4ED63800C75F5B /* SwifttrisPlus */;
+			targetProxy = 767BC3A41D4ED63900C75F5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		767BC38B1D4ED63800C75F5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767BC38C1D4ED63800C75F5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		767BC3901D4ED63900C75F5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				767BC3911D4ED63900C75F5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		767BC3AA1D4ED63900C75F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		767BC3AB1D4ED63900C75F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		767BC3AD1D4ED63900C75F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SwifttrisPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexthedar.SwifttrisPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		767BC3AE1D4ED63900C75F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SwifttrisPlus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexthedar.SwifttrisPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		767BC3B01D4ED63900C75F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = SwifttrisPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexthedar.SwifttrisPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwifttrisPlus.app/SwifttrisPlus";
+			};
+			name = Debug;
+		};
+		767BC3B11D4ED63900C75F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwifttrisPlusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexthedar.SwifttrisPlusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwifttrisPlus.app/SwifttrisPlus";
+			};
+			name = Release;
+		};
+		767BC3B31D4ED63900C75F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = SwifttrisPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexthedar.SwifttrisPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwifttrisPlus;
+			};
+			name = Debug;
+		};
+		767BC3B41D4ED63900C75F5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwifttrisPlusUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexthedar.SwifttrisPlusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwifttrisPlus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		767BC37B1D4ED63800C75F5B /* Build configuration list for PBXProject "SwifttrisPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767BC3AA1D4ED63900C75F5B /* Debug */,
+				767BC3AB1D4ED63900C75F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		767BC3AC1D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767BC3AD1D4ED63900C75F5B /* Debug */,
+				767BC3AE1D4ED63900C75F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		767BC3AF1D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767BC3B01D4ED63900C75F5B /* Debug */,
+				767BC3B11D4ED63900C75F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		767BC3B21D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				767BC3B31D4ED63900C75F5B /* Debug */,
+				767BC3B41D4ED63900C75F5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 767BC3781D4ED63800C75F5B /* Project object */;
+}
