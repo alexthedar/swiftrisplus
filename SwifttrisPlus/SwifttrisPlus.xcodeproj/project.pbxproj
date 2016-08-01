@@ -23,6 +23,7 @@
 		767BC3CC1D4ED88000C75F5B /* Sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 767BC3CB1D4ED88000C75F5B /* Sprites.atlas */; };
 		767BC3CE1D4EE11E00C75F5B /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3CD1D4EE11E00C75F5B /* Array2D.swift */; };
 		767BC3D01D4EE67200C75F5B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3CF1D4EE67200C75F5B /* Block.swift */; };
+		767BC3D21D4EE95E00C75F5B /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3D11D4EE95E00C75F5B /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		767BC3CB1D4ED88000C75F5B /* Sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Sprites.atlas; sourceTree = "<group>"; };
 		767BC3CD1D4EE11E00C75F5B /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		767BC3CF1D4EE67200C75F5B /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		767BC3D11D4EE95E00C75F5B /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				767BC3831D4ED63800C75F5B /* AppDelegate.swift */,
 				767BC3871D4ED63800C75F5B /* GameScene.swift */,
 				767BC3CF1D4EE67200C75F5B /* Block.swift */,
+				767BC3D11D4EE95E00C75F5B /* Shape.swift */,
 				767BC3891D4ED63800C75F5B /* GameViewController.swift */,
 				767BC38B1D4ED63800C75F5B /* Main.storyboard */,
 				767BC38E1D4ED63900C75F5B /* Assets.xcassets */,
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */,
+				767BC3D21D4EE95E00C75F5B /* Shape.swift in Sources */,
 				767BC3CE1D4EE11E00C75F5B /* Array2D.swift in Sources */,
 				767BC3D01D4EE67200C75F5B /* Block.swift in Sources */,
 				767BC38A1D4ED63800C75F5B /* GameViewController.swift in Sources */,
