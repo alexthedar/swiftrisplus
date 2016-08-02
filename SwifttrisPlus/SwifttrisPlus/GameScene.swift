@@ -8,7 +8,8 @@
 
 import SpriteKit
 
- let BlockSize:CGFloat = 20.0
+ let BlockSize:CGFloat = 30.0
+ let blockSpacing:CGFloat = 10.0
 
 let TickLengthLevelOne = NSTimeInterval(600)
 
@@ -50,7 +51,7 @@ class GameScene: SKScene {
         shapeLayer.addChild(gameBoard)
         gameLayer.addChild(shapeLayer)
         //sound not working comment out in order to run on sim
-        //runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("Sounds/theme.mp3", waitForCompletion: true)))
+        //runAction(SKAction.repeatActionForever(SKAction.playSoundFileNamed("theme.mp3", waitForCompletion: true)))
 
     }
    
@@ -96,6 +97,7 @@ class GameScene: SKScene {
             let sprite = SKSpriteNode(texture: texture)
             // #11
             sprite.position = pointForColumn(block.column, row:block.row - 2)
+            sprite.size = CGSizeMake(BlockSize, BlockSize)
             shapeLayer.addChild(sprite)
             block.sprite = sprite
             

@@ -75,7 +75,7 @@ import SpriteKit
     func gameDidEnd(swiftris: Swiftris) {
         view.userInteractionEnabled = false
         scene.stopTicking()
-        scene.playSound("Sounds/gameover.mp3")
+        scene.playSound("gameover.mp3")
         scene.animateCollapsingLines(swiftris.removeAllBlocks(), fallenBlocks: swiftris.removeAllBlocks()) {
             swiftris.beginGame()
         }
@@ -89,7 +89,7 @@ import SpriteKit
         } else if scene.tickLengthMillis > 50 {
             scene.tickLengthMillis -= 50
         }
-        scene.playSound("Sounds/levelup.mp3")
+        scene.playSound("levelup.mp3")
 
         
     }
@@ -99,7 +99,7 @@ import SpriteKit
         scene.redrawShape(swiftris.fallingShape!) {
             swiftris.letShapeFall()
         }
-        scene.playSound("Sounds/drop.mp3")
+        scene.playSound("drop.mp3")
 
         
     }
@@ -115,7 +115,7 @@ import SpriteKit
                 // #11
                 self.gameShapeDidLand(swiftris)
             }
-            scene.playSound("Sounds/bomb.mp3")
+            scene.playSound("bomb.mp3")
         } else {
             nextShape()
         }
