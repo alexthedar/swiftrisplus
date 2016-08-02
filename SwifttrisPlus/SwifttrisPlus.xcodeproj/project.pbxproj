@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		765DB2681D5022D8002E384A /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB2671D5022D8002E384A /* SquareShape.swift */; };
+		765DB26A1D502408002E384A /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB2691D502408002E384A /* TShape.swift */; };
+		765DB26C1D5024A5002E384A /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB26B1D5024A5002E384A /* LineShape.swift */; };
+		765DB26E1D5024C7002E384A /* LShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB26D1D5024C7002E384A /* LShape.swift */; };
+		765DB2701D502508002E384A /* JShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB26F1D502508002E384A /* JShape.swift */; };
+		765DB2721D50251C002E384A /* SShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB2711D50251C002E384A /* SShape.swift */; };
+		765DB2741D50252C002E384A /* ZShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB2731D50252C002E384A /* ZShape.swift */; };
+		765DB2761D5026A9002E384A /* Swiftris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB2751D5026A9002E384A /* Swiftris.swift */; };
 		767BC3841D4ED63800C75F5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3831D4ED63800C75F5B /* AppDelegate.swift */; };
 		767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3871D4ED63800C75F5B /* GameScene.swift */; };
 		767BC38A1D4ED63800C75F5B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3891D4ED63800C75F5B /* GameViewController.swift */; };
@@ -44,6 +52,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		765DB2671D5022D8002E384A /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
+		765DB2691D502408002E384A /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
+		765DB26B1D5024A5002E384A /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
+		765DB26D1D5024C7002E384A /* LShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LShape.swift; sourceTree = "<group>"; };
+		765DB26F1D502508002E384A /* JShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JShape.swift; sourceTree = "<group>"; };
+		765DB2711D50251C002E384A /* SShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SShape.swift; sourceTree = "<group>"; };
+		765DB2731D50252C002E384A /* ZShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZShape.swift; sourceTree = "<group>"; };
+		765DB2751D5026A9002E384A /* Swiftris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swiftris.swift; sourceTree = "<group>"; };
 		767BC3801D4ED63800C75F5B /* SwifttrisPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwifttrisPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		767BC3831D4ED63800C75F5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		767BC3871D4ED63800C75F5B /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -121,6 +137,14 @@
 				767BC3871D4ED63800C75F5B /* GameScene.swift */,
 				767BC3CF1D4EE67200C75F5B /* Block.swift */,
 				767BC3D11D4EE95E00C75F5B /* Shape.swift */,
+				765DB2751D5026A9002E384A /* Swiftris.swift */,
+				765DB2671D5022D8002E384A /* SquareShape.swift */,
+				765DB2691D502408002E384A /* TShape.swift */,
+				765DB26B1D5024A5002E384A /* LineShape.swift */,
+				765DB26D1D5024C7002E384A /* LShape.swift */,
+				765DB26F1D502508002E384A /* JShape.swift */,
+				765DB2711D50251C002E384A /* SShape.swift */,
+				765DB2731D50252C002E384A /* ZShape.swift */,
 				767BC3891D4ED63800C75F5B /* GameViewController.swift */,
 				767BC38B1D4ED63800C75F5B /* Main.storyboard */,
 				767BC38E1D4ED63900C75F5B /* Assets.xcassets */,
@@ -301,11 +325,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				765DB26E1D5024C7002E384A /* LShape.swift in Sources */,
+				765DB2681D5022D8002E384A /* SquareShape.swift in Sources */,
 				767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */,
+				765DB2701D502508002E384A /* JShape.swift in Sources */,
+				765DB2761D5026A9002E384A /* Swiftris.swift in Sources */,
 				767BC3D21D4EE95E00C75F5B /* Shape.swift in Sources */,
 				767BC3CE1D4EE11E00C75F5B /* Array2D.swift in Sources */,
+				765DB26C1D5024A5002E384A /* LineShape.swift in Sources */,
+				765DB2721D50251C002E384A /* SShape.swift in Sources */,
+				765DB26A1D502408002E384A /* TShape.swift in Sources */,
 				767BC3D01D4EE67200C75F5B /* Block.swift in Sources */,
 				767BC38A1D4ED63800C75F5B /* GameViewController.swift in Sources */,
+				765DB2741D50252C002E384A /* ZShape.swift in Sources */,
 				767BC3841D4ED63800C75F5B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +573,7 @@
 				767BC3AE1D4ED63900C75F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		767BC3AF1D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlusTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +582,7 @@
 				767BC3B11D4ED63900C75F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		767BC3B21D4ED63900C75F5B /* Build configuration list for PBXNativeTarget "SwifttrisPlusUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +591,7 @@
 				767BC3B41D4ED63900C75F5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
