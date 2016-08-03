@@ -32,6 +32,7 @@
 		767BC3CE1D4EE11E00C75F5B /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3CD1D4EE11E00C75F5B /* Array2D.swift */; };
 		767BC3D01D4EE67200C75F5B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3CF1D4EE67200C75F5B /* Block.swift */; };
 		767BC3D21D4EE95E00C75F5B /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3D11D4EE95E00C75F5B /* Shape.swift */; };
+		76D4AA651D519706006A0726 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4AA641D519706006A0726 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		767BC3CD1D4EE11E00C75F5B /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 		767BC3CF1D4EE67200C75F5B /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		767BC3D11D4EE95E00C75F5B /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		76D4AA641D519706006A0726 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				767BC3B51D4ED85000C75F5B /* Sounds */,
 				767BC3901D4ED63900C75F5B /* LaunchScreen.storyboard */,
 				767BC3931D4ED63900C75F5B /* Info.plist */,
+				76D4AA641D519706006A0726 /* HomeViewController.swift */,
 			);
 			path = SwifttrisPlus;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */,
 				765DB2701D502508002E384A /* JShape.swift in Sources */,
 				765DB2761D5026A9002E384A /* Swiftris.swift in Sources */,
+				76D4AA651D519706006A0726 /* HomeViewController.swift in Sources */,
 				767BC3D21D4EE95E00C75F5B /* Shape.swift in Sources */,
 				767BC3CE1D4EE11E00C75F5B /* Array2D.swift in Sources */,
 				765DB26C1D5024A5002E384A /* LineShape.swift in Sources */,

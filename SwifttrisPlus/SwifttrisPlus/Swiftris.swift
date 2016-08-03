@@ -46,6 +46,7 @@ class Swiftris {
     var score = 0
     var level = 1
     
+    
     init() {
         fallingShape = nil
         nextShape = nil
@@ -53,6 +54,8 @@ class Swiftris {
     }
     
     func beginGame() {
+        
+        
         if (nextShape == nil) {
             nextShape = Shape.random(PreviewColumn, startingRow: PreviewRow)
         }

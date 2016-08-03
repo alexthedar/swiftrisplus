@@ -15,6 +15,10 @@ import SpriteKit
     var swiftris:Swiftris!
     var panPointReference:CGPoint?
     
+    var timerDisplay: TimerDisplay!
+    var gameTimer: NSTimer!
+    var defaultTimer: Int = 5
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -32,8 +36,11 @@ import SpriteKit
 
         swiftris.beginGame()
 
+        setUpTimer()
+
         
         skView.presentScene(scene)
+        
         
     }
 
@@ -78,6 +85,10 @@ import SpriteKit
         scene.playSound("gameover.mp3")
         scene.animateCollapsingLines(swiftris.removeAllBlocks(), fallenBlocks: swiftris.removeAllBlocks()) {
             swiftris.beginGame()
+            if self.defaultTimer > 0 {
+                self.stopTimer()
+            }
+
         }
 
     }
@@ -126,6 +137,7 @@ import SpriteKit
         scene.redrawShape(swiftris.fallingShape!) {}
     }
 
+    @IBOutlet weak var gameTypeLabel: UILabel!
     @IBOutlet weak var levelLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBAction func didSwipe(sender: UISwipeGestureRecognizer) {
@@ -170,5 +182,39 @@ import SpriteKit
         }
         return false
     }
+    
+    func setupTimer() {
+        if ( defaultTimer > 0 ) {
+            timerDisplay = TimerDisplay(timeInSeconds: defaultTimer)
+            self.gameTimer = NSTimer(timeInterval: 1.0, target: self, selector: #selector(GameViewController.updateCurrentTimeLeft), userInfo: nil, repeats: true)
+        } else {
+            timerDisplay = TimerDisplay(endlessGame: true)
+        }
+        
+        updateTimeLabel(timerDisplay.timeAsString())
+    }
+    
+    func startTimer() {
+        NSRunLoop.mainRunLoop().addTimer(self.gameTimer, forMode: NSRunLoopCommonModes)
+    }
+    
+    func stopTimer() {
+        self.gameTimer.invalidate()
+    }
+    
+    func updateCurrentTimeLeft() {
+        if timerDisplay.timeInSeconds >= 1 {
+            timerDisplay.timeInSeconds--
+            updateTimeLabel(timerDisplay.timeAsString())
+        } else {
+            updateTimeLabel("Game Over")
+            swiftris.endGame()
+        }
+    }
+    
+    func updateTimeLabel(timeLeftString: String) {
+        gameTypeLabel.text = timeLeftString
+    }
+
 
 }
