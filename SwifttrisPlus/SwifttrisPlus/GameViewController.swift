@@ -36,7 +36,7 @@ import SpriteKit
 
         swiftris.beginGame()
 
-        setUpTimer()
+        setupTimer()
 
         
         skView.presentScene(scene)

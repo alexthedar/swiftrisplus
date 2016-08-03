@@ -10,6 +10,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBAction func classicGame(sender: AnyObject) {
+    }
+    @IBAction func timedGame(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 

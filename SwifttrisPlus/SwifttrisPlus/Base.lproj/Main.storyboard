@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="0iN-pi-A6r">
             <objects>
-                <viewController id="zVc-6b-hr2" sceneMemberID="viewController">
+                <viewController id="zVc-6b-hr2" customClass="HomeViewController" customModule="SwifttrisPlus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xb4-5i-KSK"/>
                         <viewControllerLayoutGuide type="bottom" id="gDH-6U-JFP"/>
@@ -21,9 +21,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7We-hw-XYK">
                                 <rect key="frame" x="91" y="269" width="139" height="30"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="35"/>
-                                <state key="normal" title="Normal">
+                                <state key="normal" title="Classic">
                                     <color key="titleColor" red="0.17254901960784313" green="0.57647058823529407" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="classicGame:" destination="zVc-6b-hr2" eventType="touchUpInside" id="Aaf-SN-HUm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGY-NH-xAA">
                                 <rect key="frame" x="104" y="307" width="113" height="30"/>
@@ -34,6 +37,9 @@
                                 <state key="normal" title="Timed">
                                     <color key="titleColor" red="0.47058823529411764" green="0.36470588235294116" blue="0.64313725490196083" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="timedGame:" destination="zVc-6b-hr2" eventType="touchUpInside" id="8UG-gb-mYF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="462-Uh-GjL">
                                 <rect key="frame" x="41" y="220" width="238" height="41"/>

@@ -33,6 +33,7 @@
 		767BC3D01D4EE67200C75F5B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3CF1D4EE67200C75F5B /* Block.swift */; };
 		767BC3D21D4EE95E00C75F5B /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767BC3D11D4EE95E00C75F5B /* Shape.swift */; };
 		76D4AA651D519706006A0726 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4AA641D519706006A0726 /* HomeViewController.swift */; };
+		76D4AA671D519E18006A0726 /* TimerDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D4AA661D519E18006A0726 /* TimerDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		767BC3CF1D4EE67200C75F5B /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		767BC3D11D4EE95E00C75F5B /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		76D4AA641D519706006A0726 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		76D4AA661D519E18006A0726 /* TimerDisplay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				765DB2711D50251C002E384A /* SShape.swift */,
 				765DB2731D50252C002E384A /* ZShape.swift */,
 				767BC3891D4ED63800C75F5B /* GameViewController.swift */,
+				76D4AA661D519E18006A0726 /* TimerDisplay.swift */,
 				767BC38B1D4ED63800C75F5B /* Main.storyboard */,
 				767BC38E1D4ED63900C75F5B /* Assets.xcassets */,
 				767BC3CD1D4EE11E00C75F5B /* Array2D.swift */,
@@ -332,6 +335,7 @@
 				765DB2681D5022D8002E384A /* SquareShape.swift in Sources */,
 				767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */,
 				765DB2701D502508002E384A /* JShape.swift in Sources */,
+				76D4AA671D519E18006A0726 /* TimerDisplay.swift in Sources */,
 				765DB2761D5026A9002E384A /* Swiftris.swift in Sources */,
 				76D4AA651D519706006A0726 /* HomeViewController.swift in Sources */,
 				767BC3D21D4EE95E00C75F5B /* Shape.swift in Sources */,
