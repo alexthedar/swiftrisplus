@@ -19,6 +19,8 @@ import SpriteKit
     var gameTimer: NSTimer!
     var defaultTimer: Int = 5
     
+    @IBOutlet weak var timeRemainingLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
@@ -30,13 +32,13 @@ import SpriteKit
         
         scene.scaleMode = .AspectFill
         scene.tick = didTick
-        
+        setupTimer()
         swiftris = Swiftris()
         swiftris.delegate = self
 
         swiftris.beginGame()
 
-        setupTimer()
+        
 
         
         skView.presentScene(scene)
@@ -66,6 +68,9 @@ import SpriteKit
     }
     
     func gameDidBegin(swiftris: Swiftris) {
+        if defaultTimer > 0 {
+            startTimer()
+        }
         levelLabel.text = "\(swiftris.level)"
         scoreLabel.text = "\(swiftris.score)"
         scene.tickLengthMillis = TickLengthLevelOne
@@ -82,6 +87,9 @@ import SpriteKit
     func gameDidEnd(swiftris: Swiftris) {
         view.userInteractionEnabled = false
         scene.stopTicking()
+        if defaultTimer > 0 {
+            stopTimer()
+        }
         scene.playSound("gameover.mp3")
         scene.animateCollapsingLines(swiftris.removeAllBlocks(), fallenBlocks: swiftris.removeAllBlocks()) {
             swiftris.beginGame()
@@ -213,7 +221,7 @@ import SpriteKit
     }
     
     func updateTimeLabel(timeLeftString: String) {
-        gameTypeLabel.text = timeLeftString
+        timeRemainingLabel.text = timeLeftString
     }
 
 

@@ -10,10 +10,16 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBAction func classicGame(sender: AnyObject) {
+
+
+    @IBAction func leadersButton(sender: AnyObject) {
+        print("leadersButton")
     }
-    @IBAction func timedGame(sender: AnyObject) {
+    @IBAction func achievementsButton(sender: AnyObject) {
+        print("achievements")
     }
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,7 +31,16 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let viewController: GameViewController = (segue.destinationViewController as? GameViewController)!
+        
+        if(segue.identifier == "timedGame"){
+            viewController.defaultTimer = 120
+        } else if (segue.identifier == "endlessGame"){
+            viewController.defaultTimer = 0
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
