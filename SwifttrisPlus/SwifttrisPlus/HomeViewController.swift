@@ -7,21 +7,22 @@
 //
 
 import UIKit
+import GameKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
 
 
 
     @IBAction func leadersButton(sender: AnyObject) {
-        print("leadersButton")
+        showLeaderBoard()
     }
     @IBAction func achievementsButton(sender: AnyObject) {
         print("achievements")
     }
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        authenticateLocalPlayer()
 
         // Do any additional setup after loading the view.
     }
@@ -39,6 +40,30 @@ class HomeViewController: UIViewController {
         } else if (segue.identifier == "endlessGame"){
             viewController.defaultTimer = 0
         }
+    }
+    
+    func authenticateLocalPlayer(){
+        var localPlayer = GKLocalPlayer.localPlayer()
+        localPlayer.authenticateHandler = {(viewController, error) -> Void in
+            if ((viewController) != nil) {
+                self.presentViewController(viewController!, animated: true, completion: nil)
+            }else{
+                print("(GameCenter) Player authenticated: \(GKLocalPlayer.localPlayer().authenticated) error:\(error)")
+            }
+        }
+    }
+    
+    func showLeaderBoard() {
+        let gameCenterVC = GKGameCenterViewController()
+        gameCenterVC.gameCenterDelegate = self
+        gameCenterVC.viewState = GKGameCenterViewControllerState.Leaderboards
+        gameCenterVC.leaderboardTimeScope = GKLeaderboardTimeScope.AllTime
+        gameCenterVC.leaderboardIdentifier = "topScores"
+        self.presentViewController(gameCenterVC, animated: true, completion: nil)
+    }
+    
+    func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterViewController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     /*

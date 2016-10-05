@@ -37,15 +37,9 @@ import SpriteKit
         swiftris.delegate = self
 
         swiftris.beginGame()
-
-        
-
         
         skView.presentScene(scene)
-        
-        
     }
-
 
     override func prefersStatusBarHidden() -> Bool {
         return true
@@ -61,7 +55,6 @@ import SpriteKit
         }
         self.scene.addPreviewShapeToScene(newShapes.nextShape!) {}
         self.scene.movePreviewShape(fallingShape) {
-            // #16
             self.view.userInteractionEnabled = true
             self.scene.startTicking()
         }
@@ -212,7 +205,7 @@ import SpriteKit
     
     func updateCurrentTimeLeft() {
         if timerDisplay.timeInSeconds >= 1 {
-            timerDisplay.timeInSeconds--
+            timerDisplay.timeInSeconds -= 1
             updateTimeLabel(timerDisplay.timeAsString())
         } else {
             updateTimeLabel("Game Over")
