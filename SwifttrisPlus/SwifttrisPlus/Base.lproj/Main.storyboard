@@ -70,6 +70,7 @@
                                         </constraints>
                                         <state key="normal" image="Achievements"/>
                                         <connections>
+                                            <action selector="achievementButtonPressed" destination="zVc-6b-hr2" eventType="touchUpInside" id="Rah-yk-rU2"/>
                                             <action selector="achievementsButton:" destination="zVc-6b-hr2" eventType="touchUpInside" id="3Qu-Px-lI9"/>
                                         </connections>
                                     </button>

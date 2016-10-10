@@ -10,7 +10,8 @@ import UIKit
 import GameKit
 
 class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
-
+    
+    var achievements: [GKAchievement]?
 
 
     @IBAction func leadersButton(sender: AnyObject) {
@@ -35,6 +36,9 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let viewController: GameViewController = (segue.destinationViewController as? GameViewController)!
         
+        if self.achievements != nil {
+            viewController.achievements = self.achievements!
+        }
         if(segue.identifier == "timedGame"){
             viewController.defaultTimer = 120
         } else if (segue.identifier == "endlessGame"){
@@ -61,6 +65,42 @@ class HomeViewController: UIViewController, GKGameCenterControllerDelegate {
         gameCenterVC.leaderboardIdentifier = "topScores"
         self.presentViewController(gameCenterVC, animated: true, completion: nil)
     }
+    
+    @IBAction func achievementButtonPressed() {
+        showAchievements()
+    }
+    
+    func showAchievements() {
+        let gameCenterVC = GKGameCenterViewController()
+        gameCenterVC.gameCenterDelegate = self
+        gameCenterVC.viewState = GKGameCenterViewControllerState.Achievements
+        self.presentViewController(gameCenterVC, animated: true, completion: nil)
+    }
+    
+    
+    func loadPreExistingAchievements() {
+        GKAchievement.loadAchievementsWithCompletionHandler({ (achievements, error) -> Void in
+            if let achievements = achievements as [GKAchievement]! {
+                self.achievements = achievements
+                print("Successfully downloaded your past achievements")
+                
+
+            } else if (achievements == nil) {
+                print("This player has not made any progress towards any achievements, and we should initialize some achievements for them to do")
+                self.achievements = []
+                
+                for (achievementID, _) in GameAchievements().allAchievements {
+                    self.achievements!.append(GKAchievement.init(identifier: achievementID))
+                }
+                
+                print("\(self.achievements)")
+                
+            } else {
+                print("There was an error downloading previous achievements: \(error?.description)")
+            }
+        })
+    }
+    
     
     func gameCenterViewControllerDidFinish(gameCenterViewController: GKGameCenterViewController) {
         self.dismissViewControllerAnimated(true, completion: nil)

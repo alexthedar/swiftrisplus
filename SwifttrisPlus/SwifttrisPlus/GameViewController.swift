@@ -8,6 +8,7 @@
 
 import UIKit
 import SpriteKit
+import GameKit
 
  class GameViewController: UIViewController, SwiftrisDelegate, UIGestureRecognizerDelegate {
 
@@ -18,6 +19,8 @@ import SpriteKit
     var timerDisplay: TimerDisplay!
     var gameTimer: NSTimer!
     var defaultTimer: Int = 5
+    
+    var achievements: [GKAchievement] = []
     
     @IBOutlet weak var timeRemainingLabel: UILabel!
     
@@ -215,6 +218,43 @@ import SpriteKit
     
     func updateTimeLabel(timeLeftString: String) {
         timeRemainingLabel.text = timeLeftString
+    }
+    
+    func gameDidBreakBlocks(rowsBroken: Int) {
+        
+        for achievement in achievements where achievement.completed != true {
+            achievement.percentComplete += ( 100 * Double(rowsBroken) / Double(GameAchievements().allAchievements[achievement.identifier!]!) )
+        }
+        
+        recordAchievements()
+    }
+    
+
+    
+    func reportScoresToGameCenter() {
+        if GKLocalPlayer.localPlayer().authenticated {
+            let gkScore = GKScore(leaderboardIdentifier: "topScores")
+            gkScore.value = Int64(swiftris.score)
+            GKScore.reportScores([gkScore]) { (error) -> Void in
+                if (error != nil) {
+                    print("Error reporting scores: \(error!.description)")
+                } else {
+                    print("Top Score of \(gkScore.value) reported successfully to Game Center")
+                }
+            }
+        }
+    }
+    
+    func recordAchievements() {
+        let achievement = GKAchievement(identifier: "achievement.9890")
+        achievement.showsCompletionBanner = true
+        print("Attempting to update achievements: \(achievements)")
+        
+        GKAchievement.reportAchievements(achievements) { (error) -> Void in
+            if (error != nil) {
+                print("Error updating achievements: \(error?.description)")
+            }
+        }
     }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761CC0F11DAB6415005A9712 /* GameAchievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761CC0F01DAB6415005A9712 /* GameAchievements.swift */; };
 		765DB2681D5022D8002E384A /* SquareShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB2671D5022D8002E384A /* SquareShape.swift */; };
 		765DB26A1D502408002E384A /* TShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB2691D502408002E384A /* TShape.swift */; };
 		765DB26C1D5024A5002E384A /* LineShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765DB26B1D5024A5002E384A /* LineShape.swift */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		761CC0F01DAB6415005A9712 /* GameAchievements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAchievements.swift; sourceTree = "<group>"; };
 		765DB2671D5022D8002E384A /* SquareShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareShape.swift; sourceTree = "<group>"; };
 		765DB2691D502408002E384A /* TShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TShape.swift; sourceTree = "<group>"; };
 		765DB26B1D5024A5002E384A /* LineShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineShape.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				767BC3931D4ED63900C75F5B /* Info.plist */,
 				76D4AA641D519706006A0726 /* HomeViewController.swift */,
 				76EF95D81DA49435002C3AB5 /* Launch Screen.storyboard */,
+				761CC0F01DAB6415005A9712 /* GameAchievements.swift */,
 			);
 			path = SwifttrisPlus;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761CC0F11DAB6415005A9712 /* GameAchievements.swift in Sources */,
 				765DB26E1D5024C7002E384A /* LShape.swift in Sources */,
 				765DB2681D5022D8002E384A /* SquareShape.swift in Sources */,
 				767BC3881D4ED63800C75F5B /* GameScene.swift in Sources */,
