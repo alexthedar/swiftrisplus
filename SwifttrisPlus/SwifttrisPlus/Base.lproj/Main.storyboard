@@ -34,6 +34,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOJ-vt-dPJ">
+                                        <accessibility key="accessibilityConfiguration" hint="Show game center leaderboard" label="Leaders"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="168" id="Llb-Xo-iwY"/>
                                             <constraint firstAttribute="height" constant="140" id="bh6-fI-Y1H"/>
@@ -44,6 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8JW-Kk-VdF">
+                                        <accessibility key="accessibilityConfiguration" hint="Play against a clock" label="Timed game"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="I6L-sr-5Cm"/>
                                             <constraint firstAttribute="width" constant="168" id="vtH-HS-mL6"/>
@@ -54,6 +56,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6H-FY-TOm">
+                                        <accessibility key="accessibilityConfiguration" hint="Play game forever" label="Endless game"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="168" id="b7f-JX-aEy"/>
                                             <constraint firstAttribute="height" constant="140" id="gwE-Y1-2OQ"/>
@@ -64,6 +67,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4U-I7-aCW">
+                                        <accessibility key="accessibilityConfiguration" hint="Show game center achievements" label="Achievements"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="168" id="2Q9-xh-dd1"/>
                                             <constraint firstAttribute="height" constant="140" id="Fib-Ch-89k"/>
