@@ -31,6 +31,11 @@ import GameKit
         
         skView.multipleTouchEnabled = false
         
+        if (AccessUtility.sharedInstance.voiceOverIsRunning()) {
+            skView.accessibilityTraits = UIAccessibilityTraitAllowsDirectInteraction
+            skView.isAccessibilityElement = true
+        }
+        
         scene = GameScene(size: skView.bounds.size)
         
         scene.scaleMode = .AspectFill
@@ -61,6 +66,7 @@ import GameKit
             self.view.userInteractionEnabled = true
             self.scene.startTicking()
         }
+        AccessUtility.sharedInstance.speak(fallingShape.verbalDescription())
     }
     
     func gameDidBegin(swiftris: Swiftris) {
@@ -87,6 +93,7 @@ import GameKit
             stopTimer()
         }
         scene.playSound("gameover.mp3")
+        AccessUtility.sharedInstance.speak("Game over")
         scene.animateCollapsingLines(swiftris.removeAllBlocks(), fallenBlocks: swiftris.removeAllBlocks()) {
             swiftris.beginGame()
             if self.defaultTimer > 0 {
@@ -105,6 +112,7 @@ import GameKit
             scene.tickLengthMillis -= 50
         }
         scene.playSound("levelup.mp3")
+        AccessUtility.sharedInstance.speak("Leveled up")
 
         
     }
@@ -115,7 +123,7 @@ import GameKit
             swiftris.letShapeFall()
         }
         scene.playSound("drop.mp3")
-
+        AccessUtility.sharedInstance.speak("Shape dropped")
         
     }
     

@@ -36,6 +36,9 @@ class JShape:Shape {
      Pivots about `1`
      
      */
+    override func verbalDescription() -> String {
+        return "J shape"
+    }
     
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [

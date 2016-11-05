@@ -37,6 +37,9 @@ class LShape:Shape {
      Pivots about `1`
      
      */
+    override func verbalDescription() -> String {
+        return "L shape"
+    }
     
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [

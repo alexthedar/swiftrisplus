@@ -34,6 +34,9 @@ class TShape: Shape{
      • marks the row/column indicator for the shape
      
      */
+    override func verbalDescription() -> String {
+        return "T shape"
+    }
     
     override var blockRowColumnPositions: [Orientation: Array<(columnDiff: Int, rowDiff: Int)>] {
         return [
